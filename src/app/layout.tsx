@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Provider } from "@/app/provider";
+import Provider from "@/app/provider";
+import info from "@/constants/info";
 
 export const metadata: Metadata = {
-    title: "Gadget Specialized Site（仮名）",
-    description:
-        "このサイトはガジェットのレビューや紹介に特化した情報共有サイトです",
+    title: info.title,
+    description: info.description,
 };
 
 export default function RootLayout({
@@ -15,10 +15,8 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="ja">
-            <body className="container mx-auto px-4 antialiased">
-                <Provider>
-                    <main>{children}</main>
-                </Provider>
+            <body className="antialiased">
+                <Provider>{children}</Provider>
             </body>
         </html>
     );

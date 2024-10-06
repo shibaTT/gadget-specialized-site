@@ -7,6 +7,7 @@
 ### フロントエンド
 
 Next.js
+NextAuth(Auth.js)
 DaisyUI
 
 ### ホスティング
@@ -14,3 +15,9 @@ DaisyUI
 Vercel
 
 ## 認証
+
+NextAuth(Auth.js)
+
+## データベース
+
+MongoDB
