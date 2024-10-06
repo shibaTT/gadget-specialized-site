@@ -14,7 +14,6 @@ export default function Register() {
     const [userIdError, setUserIdError] = useState<string | null>(null);
     const { status } = useSession();
     const router = useRouter();
-    const ref = useRef<HTMLFormElement>(null);
 
     useEffect(() => {
         // ログインしてたらトップ画面に遷移する
